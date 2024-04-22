@@ -37,5 +37,7 @@ Stay Updated: Watch this repository to receive notifications about new updates, 
 - **Notion Page**: Explore detailed schedules and resources on the [ML in 45 Days Notion page](https://www.notion.so/PLANNER-2177db6c95c645ec816d3f8968468992?pvs=4).
 - **LinkedIn**: Connect with me on [LinkedIn](https://www.linkedin.com/in/varundronamraju/) for professional networking and updates.
 - **Instagram**: Follow my coding journey on [Instagram](https://www.instagram.com/varunn.code/) for behind-the-scenes and project updates.
+- **Miro**: Check out the ML roadmap on [Miro](https://miro.com/welcomeonboard/M3dVOXZaQmZBWVVyamlpZ210bVZXUmFuMEk2aTQ0cmVBckRoYzBWZXhrY1F4ZXh1UXVsbjd1MXVpcE1vNUgyeHwzNDU4NzY0NTg2MzU2NTM2MTQwfDI=?share_link_id=860088113895) for a visual overview of the journey.
+
 
 🌟 Let's embark on this ML journey together and make every day count! Happy learning! 💡✨
