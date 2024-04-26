@@ -1,0 +1,519 @@
+"syntax"
+"Description"
+"code"
+
+
+"basicall we can use these function in the format math.func()
+but if we need to use for complex numbers we can always use cmath.func() to compute the same but a diffrent complex number module"
+Section -1 Number-theoretic and representation functions
+
+Syntax: abs(x)
+Description: Returns the absolute value of a number.
+Code:
+x = -10
+result = abs(x)
+print("Absolute value of", x, "is", result)
+
+Syntax: divmod(a, b)
+Description: Returns the quotient and the remainder when a is divided by b.
+Code:
+a = 17
+b = 5
+quotient, remainder = divmod(a, b)
+print("Quotient of", a, "divided by", b, "is", quotient)
+print("Remainder of", a, "divided by", b, "is", remainder)
+
+Syntax: max(iterable)
+Description: Returns the largest item in an iterable or the largest of two or more arguments.
+Code:
+numbers = [3, 7, 2, 8, 5]
+largest = max(numbers)
+print("Largest number in the list is", largest)
+
+Syntax: min(iterable)
+Description: Returns the smallest item in an iterable or the smallest of two or more arguments.
+Code:
+numbers = [3, 7, 2, 8, 5]
+smallest = min(numbers)
+print("Smallest number in the list is", smallest)
+
+Syntax: pow(x, y[, z])
+Description: Returns x to the power of y; if z is present, returns x to the power of y, modulo z.
+Code:
+x = 2
+y = 3
+z = 5
+result = pow(x, y, z)
+print(x, "to the power of", y, "modulo", z, "is", result)
+
+Syntax: ceil(x)
+Description: Returns the ceiling of x as a float, the smallest integer value greater than or equal to x.
+Code:
+import math
+x = 4.7
+ceiling = math.ceil(x)
+print("Ceiling of", x, "is", ceiling)
+
+Syntax: comb(n, k)
+Description: Returns the number of ways to choose k items from n items without repetition and without regard to the order.
+Code:
+import math
+n = 5
+k = 2
+combinations = math.comb(n, k)
+print("Number of combinations:", combinations)
+
+Syntax: copysign(x, y)
+Description: Returns a float consisting of the value of the first argument and the sign of the second argument.
+Code:
+import math
+x = -3.14
+y = 5
+result = math.copysign(x, y)
+print("Result:", result)
+
+Syntax: fabs(x)
+Description: Returns the absolute value of x.
+Code:
+import math
+x = -3.14
+result = math.fabs(x)
+print("Absolute value of", x, "is", result)
+
+Syntax: factorial(x)
+Description: Returns the factorial of x.
+Code:
+import math
+x = 5
+factorial = math.factorial(x)
+print("Factorial of", x, "is", factorial)
+
+Syntax: floor(x)
+Description: Returns the floor of x as a float, the largest integer value less than or equal to x.
+Code:
+import math
+x = 4.7
+floor_value = math.floor(x)
+print("Floor of", x, "is", floor_value)
+
+Syntax: fmod(x, y)
+Description: Returns the remainder of dividing x by y as a float.
+Code:
+import math
+x = 10
+y = 3
+remainder = math.fmod(x, y)
+print("Remainder of", x, "divided by", y, "is", remainder)
+
+Syntax: fsum(iterable)
+Description: Returns an accurate floating-point sum of values in the iterable.
+Code:
+import math
+numbers = [0.1, 0.2, 0.3]
+sum_result = math.fsum(numbers)
+print("Sum of numbers:", sum_result)
+
+Syntax: gcd(a, b)
+Description: Returns the greatest common divisor of the integers a and b.
+Code:
+import math
+a = 24
+b = 36
+gcd = math.gcd(a, b)
+print("GCD of", a, "and", b, "is", gcd)
+
+Syntax: frexp(x)
+Description: Returns the mantissa and exponent of x as the pair (m, e).
+Code:
+import math
+x = 16
+mantissa, exponent = math.frexp(x)
+print("Mantissa:", mantissa)
+print("Exponent:", exponent)
+
+Syntax: isclose(a, b, rel_tol=1e-09, abs_tol=0.0)
+Description: Returns True if the values a and b are close to each other and False otherwise.
+Code:
+import math
+a = 1.0000001
+b = 1.0000002
+result = math.isclose(a, b)
+print("Are", a, "and", b, "close?", result)
+
+Syntax: isfinite(x)
+Description: Returns True if x is a finite number, and False otherwise.
+Code:
+import math
+x = float('inf')
+result = math.isfinite(x)
+print(x, "is finite?", result)
+
+Syntax: isinf(x)
+Description: Returns True if x is positive or negative infinity, and False otherwise.
+Code:
+import math
+x = float('inf')
+result = math.isinf(x)
+print(x, "is infinity?", result)
+
+Syntax: isnan(x)
+Description: Returns True if x is a NaN (Not a Number), and False otherwise.
+Code:
+import math
+x = float('nan')
+result = math.isnan(x)
+print(x, "is NaN?", result)
+
+Syntax: lcm(x, y)
+Description: Returns the least common multiple of the integers x and y.
+Code:
+import math
+x = 12
+y = 15
+lcm = math.lcm(x, y)
+print("LCM of", x, "and", y, "is", lcm)
+
+Syntax: ldexp(x, i)
+Description: Returns x * (2**i).
+Code:
+import math
+x = 2
+i = 3
+result = math.ldexp(x, i)
+print(x, "times 2 raised to the power of", i, "is", result)
+
+Syntax: modf(x)
+Description: Returns the fractional and integer parts of x as a pair of numbers.
+Code:
+import math
+x = 4.5
+fractional_part, integer_part = math.modf(x)
+print("Fractional part:", fractional_part)
+print("Integer part:", integer_part)
+
+Syntax: nextafter(x, y)
+Description: Returns the next representable floating-point value after x in the direction of y.
+Code:
+import math
+x = 1.0
+y = 2.0
+result = math.nextafter(x, y)
+print("Next representable value after", x, "in the direction of", y, "is", result)
+
+Syntax: perm(n, k=None)
+Description: Returns the number of ways to choose k items from n items with order and without repetition.
+Code:
+import math
+n = 5
+k = 2
+permutations = math.perm(n, k)
+print("Number of permutations:", permutations)
+
+Syntax: prod(iterable, start=1)
+Description: Returns the product of all elements in the iterable.
+Code:
+import math
+numbers = [2, 3, 4]
+product = math.prod(numbers)
+print("Product of numbers:", product)
+
+Syntax: remainder(x, y)
+Description: Returns the remainder of dividing x by y.
+Code:
+import math
+x = 10
+y = 3
+remainder = math.remainder(x, y)
+print("Remainder of", x, "divided by", y, "is", remainder)
+
+Syntax: sumprod(iterable, /, start=0)
+Description: Returns the sum of the products of the corresponding items in two iterables.
+Code:
+import math
+numbers1 = [1, 2, 3]
+numbers2 = [4, 5, 6]
+sum_product = math.sumprod(numbers1, numbers2)
+print("Sum of products:", sum_product)
+
+Syntax: trunc(x)
+Description: Returns the truncated integer value of x.
+Code:
+import math
+x = 4.7
+truncated_value = math.trunc(x)
+print("Truncated value of", x, "is", truncated_value)
+
+Syntax: ulp(x)
+Description: Returns the distance between x and the nearest adjacent floating-point number.
+Code:
+import math
+x = 1.0
+ulp_value = math.ulp(x)
+print("Unit in the last place (ulp) of", x, "is", ulp_value)
+
+
+
+Section -2 Power and Logarithmic Functions:
+Syntax: math.cbrt(x)
+Description: Returns the cube root of x.
+Code:
+import math
+x = 27
+cube_root = math.cbrt(x)
+print("Cube root of", x, "is", cube_root)
+
+Syntax: math.exp(x)
+Description: Returns e raised to the power x.
+Code:
+import math
+x = 2
+result = math.exp(x)
+print("e raised to the power", x, "is", result)
+
+Syntax: math.exp2(x)
+Description: Returns 2 raised to the power x.
+Code:
+import math
+x = 3
+result = math.exp2(x)
+print("2 raised to the power", x, "is", result)
+
+Syntax: math.expm1(x)
+Description: Returns e raised to the power x, minus 1.
+Code:
+import math
+x = 0.00001
+result = math.expm1(x)
+print("e raised to the power", x, "minus 1 is", result)
+
+Syntax: math.log(x[, base])
+Description: Returns the natural logarithm of x or logarithm of x to the given base.
+Code:
+import math
+x = 10
+natural_log = math.log(x)
+print("Natural logarithm of", x, "is", natural_log)
+
+Syntax: math.log1p(x)
+Description: Returns the natural logarithm of 1+x (base e).
+Code:
+import math
+x = 0.5
+result = math.log1p(x)
+print("Natural logarithm of 1+", x, "is", result)
+
+Syntax: math.log2(x)
+Description: Returns the base-2 logarithm of x.
+Code:
+import math
+x = 16
+result = math.log2(x)
+print("Logarithm base-2 of", x, "is", result)
+
+Syntax: math.log10(x)
+Description: Returns the base-10 logarithm of x.
+Code:
+import math
+x = 100
+result = math.log10(x)
+print("Logarithm base-10 of", x, "is", result)
+
+Syntax: math.pow(x, y)
+Description: Returns x raised to the power y.
+Code:
+import math
+x = 2
+y = 3
+result = math.pow(x, y)
+print(x, "raised to the power", y, "is", result)
+
+Syntax: math.sqrt(x)
+Description: Returns the square root of x.
+Code:
+import math
+x = 25
+result = math.sqrt(x)
+print("Square root of", x, "is", result)
+
+
+
+
+Module-3: Trigonometric Functions:
+Syntax: math.acos(x)
+Description: Returns the arc cosine of x, in radians. The result is between 0 and pi.
+Code:
+import math
+x = 0.5
+arc_cosine = math.acos(x)
+print("Arc cosine of", x, "is", arc_cosine)
+
+Syntax: math.asin(x)
+Description: Returns the arc sine of x, in radians. The result is between -pi/2 and pi/2.
+Code:
+import math
+x = 0.5
+arc_sine = math.asin(x)
+print("Arc sine of", x, "is", arc_sine)
+
+Syntax: math.atan(x)
+Description: Returns the arc tangent of x, in radians. The result is between -pi/2 and pi/2.
+Code:
+import math
+x = 1
+arc_tangent = math.atan(x)
+print("Arc tangent of", x, "is", arc_tangent)
+
+Syntax: math.atan2(y, x)
+Description: Returns atan(y / x), in radians. The result is between -pi and pi.
+Code:
+import math
+x = 1
+y = 1
+atan2_result = math.atan2(y, x)
+print("Arc tangent of", y, "/", x, "is", atan2_result)
+
+Syntax: math.cos(x)
+Description: Returns the cosine of x radians.
+Code:
+import math
+x = math.pi
+cosine = math.cos(x)
+print("Cosine of", x, "is", cosine)
+
+Syntax: math.dist(p, q)
+Description: Returns the Euclidean distance between two points p and q.
+Code:
+import math
+p = (1, 2)
+q = (4, 6)
+distance = math.dist(p, q)
+print("Euclidean distance between", p, "and", q, "is", distance)
+
+Syntax: math.hypot(*coordinates)
+Description: Returns the Euclidean norm.
+Code:
+import math
+x = 3
+y = 4
+hypotenuse = math.hypot(x, y)
+print("Hypotenuse of a right triangle with sides", x, "and", y, "is", hypotenuse)
+
+Syntax: math.sin(x)
+Description: Returns the sine of x radians.
+Code:
+import math
+x = math.pi / 2
+sine = math.sin(x)
+print("Sine of", x, "is", sine)
+
+Syntax: math.tan(x)
+Description: Returns the tangent of x radians.
+Code:
+import math
+x = math.pi / 4
+tangent = math.tan(x)
+print("Tangent of", x, "is", tangent)
+
+Syntax: math.acosh(x)
+Description: Return the inverse hyperbolic cosine of x.
+Code:
+import math
+x = 2
+result = math.acosh(x)
+print("Inverse hyperbolic cosine of", x, "is", result)
+
+Syntax: math.asinh(x)
+Description: Return the inverse hyperbolic sine of x.
+Code:
+import math
+x = 2
+result = math.asinh(x)
+print("Inverse hyperbolic sine of", x, "is", result)
+
+Syntax: math.atanh(x)
+Description: Return the inverse hyperbolic tangent of x.
+Code:
+import math
+x = 0.5
+result = math.atanh(x)
+print("Inverse hyperbolic tangent of", x, "is", result)
+
+Syntax: math.cosh(x)
+Description: Return the hyperbolic cosine of x.
+Code:
+import math
+x = 2
+result = math.cosh(x)
+print("Hyperbolic cosine of", x, "is", result)
+
+Syntax: math.sinh(x)
+Description: Return the hyperbolic sine of x.
+Code:
+import math
+x = 2
+result = math.sinh(x)
+print("Hyperbolic sine of", x, "is", result)
+
+Syntax: math.tanh(x)
+Description: Return the hyperbolic tangent of x.
+Code:
+import math
+x = 0.5
+result = math.tanh(x)
+print("Hyperbolic tangent of", x, "is", result)
+
+
+
+
+section-4  Angular Conversions:
+Syntax: math.degrees(x)
+Description: Convert angle x from radians to degrees.
+Code:
+import math
+x = math.pi / 2
+degrees = math.degrees(x)
+print("Angle", x, "in radians is equal to", degrees, "degrees.")
+
+Syntax: math.radians(x)
+Description: Convert angle x from degrees to radians.
+Code:
+import math
+x = 90
+radians = math.radians(x)
+print("Angle", x, "in degrees is equal to", radians, "radians.")
+
+
+
+section -5 unique functions :
+Syntax: math.erf(x)
+Description: Return the error function at x.
+Code:
+import math
+x = 1
+error_function = math.erf(x)
+print("Error function at", x, "is", error_function)
+
+Syntax: math.erfc(x)
+Description: Return the complementary error function at x.
+Code:
+import math
+x = 1
+complementary_error_function = math.erfc(x)
+print("Complementary error function at", x, "is", complementary_error_function)
+
+Syntax: math.gamma(x)
+Description: Return the Gamma function at x.
+Code:
+import math
+x = 5
+gamma_function = math.gamma(x)
+print("Gamma function at", x, "is", gamma_function)
+
+Syntax: math.lgamma(x)
+Description: Return the natural logarithm of the absolute value of the Gamma function at x.
+Code:
+import math
+x = 5
+natural_log_gamma = math.lgamma(x)
+print("Natural logarithm of absolute value of Gamma function at", x, "is", natural_log_gamma)
+
